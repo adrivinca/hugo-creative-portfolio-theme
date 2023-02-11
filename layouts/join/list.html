@@ -1,0 +1,60 @@
+{{ define "main" }}
+<div class="col-xs-12 col-sm-8 col-md-9 content-column white-background">
+  {{ partial "mobile_nav_toggle.html" . }}
+  <div class="row">
+    <div class="col-lg-8">
+      <div class="content-column-content">
+         <h1>{{ .Title }}</h1>
+         {{ .Content }}
+         <h4>Drop us a line</h4>
+          <div class="columns container my-2">
+            <div class="column is-half is-offset-one-quarter">
+            <h1 class="title">Contribute to Serverless Resources</h1>
+
+            <div class="field">
+              <label class="label" for="title">Title</label>
+              <div class="control">
+                <input id="title" name="title" class="input" type="text">
+              </div>
+            </div>
+            
+            <div class="field">
+              <label class="label" for="url">URL</label>
+              <div class="control">
+                <input id="url" name="url" class="input" type="url">
+              </div>
+            </div>
+              
+            <div class="field">
+              <label class="label" for="author">Author</label>
+              <div class="control">
+                <input id="author" class="input" type="text" name="author">
+              </div>
+            </div>
+            
+            <div class="field">
+              <label class="label" for="tags">Tags (comma separated)</label>
+              <div class="control">
+                <input id="tags" class="input" type="text" name="tags">
+              </div>
+            </div>
+              
+            <div class="field">
+              <label class="label" for="description">Description</label>
+              <div class="control">
+                <textarea id="description" class="textarea" name="description"></textarea>
+              </div>
+            </div>
+            
+            <!-- We'll prepare our javascript's function for later -->
+            <div class="control">
+              <button onclick="validateSubmission();" class="button is-link is-fullwidth">Submit</button>
+            </div>
+              
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}
