@@ -348,7 +348,7 @@ SIDEBAR + RIGHT COLUMN
 }
 .sidebar-p {
   color: #999999;
-  font-size: 14px;
+  font-size: 16px;
 }
 .sidebar-menu {
   list-style-type: none;
@@ -405,6 +405,10 @@ SIDEBAR + RIGHT COLUMN
 }
 .content-column-content p.lead {
   color: #555555;
+}
+.content-column-content p.small {
+  color: #555555;
+  font-size: 16px;
 }
 .content-column-content p,
 .content-column-content li {
