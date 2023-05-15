@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
-<head>{{ partial "head.html" . }}</head>
+<head>{{ partial "head.html" . }}
+    <!-- <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css"> -->
+    <link rel="stylesheet" href="/css/flickity.css" />
+    <link rel="stylesheet" href="/css/carousel.css">
+</head>
 <body>
   <div id="all">
       <div class="container-fluid">
@@ -12,5 +16,8 @@
       </div>
   </div>
   {{ partial "scripts.html" . }}
+  <!-- <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script> -->
+  <script src="/js/flickity.pkgd.js"></script>
+  <script src="/js/carousel.js"></script>
 </body>
 </html>
