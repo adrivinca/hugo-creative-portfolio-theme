@@ -7,7 +7,7 @@
          <h1>{{ .Title }}</h1>
          {{ .Content }}
          <h4>Drop us a line at:</h4>
-         <h6>contact [at] sciencemeets.art</h6>
+         <h6>contact@sciencemeets.art</h6>
          <h4>You can find us also on:</h4>
          {{ partial "social_buttons_in_contact.html" . }}
          {{ with .Site.Params.email }}
@@ -24,6 +24,13 @@
              <div class="form-group">
                <label for="email">Your email *</label>
                <input type="email" name="email" id="email" required="required" class="form-control">
+             </div>
+             <div class="form-group">
+              <label for="consent">Do you consent to publish your email on our website?</label><br>
+              <input type="radio" id="consent-yes" name="consent" value="Yes">
+              <label for="consent-yes">Yes</label>
+              <input type="radio" id="consent-no" name="consent" value="No">
+              <label for="consent-no">No</label>
              </div>
              <div class="form-group">
               <label for="email">URL to website and/or socials</label>
