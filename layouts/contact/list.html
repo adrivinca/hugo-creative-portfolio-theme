@@ -8,9 +8,23 @@
          {{ .Content }}
          <h4>Drop us a line at:</h4>
          <h6>contact@sciencemeets.art</h6>
+
          <h4>You can find us also on:</h4>
          {{ partial "social_buttons_in_contact.html" . }}
          {{ with .Site.Params.email }}
+         <!-- Add HubSpot form section here -->
+         <h4>Join our newsletter</h4>
+         <div id="hubspot-form"></div>
+
+         <script charset="utf-8" type="text/javascript" src="//js-eu1.hsforms.net/forms/embed/v2.js"></script>
+         <script>
+           hbspt.forms.create({
+             portalId: "144804946",
+             formId: "a959fa3f-800d-45ff-bbc1-0c1fabf6e323",
+             target: '#hubspot-form'
+           });
+         </script>
+         
          <h4>Join our network</h4>
          <p class="p.small">By sending your information you agree on it to be shared on this website only.
          Any infomration can be removed just by contacting us.
